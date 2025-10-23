@@ -1,7 +1,10 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface WorkItemProps {
   src: string | StaticImageData;
@@ -25,17 +28,17 @@ const WorkItem = ({
   const isSmall = size === "small";
 
   return (
-    <Link target="_blank" href={link}>
+    <Link target="_blank" href={link} data-cursor="scale">
       <div
         className="w-full md:w-auto cursor-pointer group"
         data-cursor={dataCursor}
       >
         <div
-          className={`relative w-full ${isSmall ? "md:w-[600px] md:h-[420px]" : "md:w-full md:h-[850px]"} h-[100%] border overflow-hidden`}
+          className={`relative w-full ${isSmall ? "md:w-[600px] md:h-[420px]" : "md:w-full md:h-[850px]"} h-50 border overflow-hidden`}
         >
           <Image
             src={src}
-            className="absolute inset-0 object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            className="absolute inset-0 object-cover transition-transform duration-500 ease-out group-hover:scale-105 w-full"
             alt={alt}
             layout="fill"
           />
@@ -53,6 +56,7 @@ const WorkItem = ({
 };
 
 export const SelectedWorks = () => {
+  const {push} = useRouter();
   return (
     <div className="px-3 lg:px-6 xl:px-14 mt-10 md:mt-20" data-magnetic>
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
@@ -62,7 +66,7 @@ export const SelectedWorks = () => {
       <div className="mt-6 md:mt-10 flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-15">
         <WorkItem
           src="https://framerusercontent.com/images/jmGsErVaXE9HMnmsIjHDba05DSg.png?width=1600&height=900"
-          alt="image1"
+          alt="GitHub beginner's guide article cover showing GitHub interface and getting started concepts"
           title="A beginner's guide to getting started 
                     with GitHub"
           date="Published on Mar 3, 2025"
@@ -122,6 +126,7 @@ export const SelectedWorks = () => {
         <Button
           className="rounded-3xl text-sm md:text-md px-6 py-2"
           data-cursor="scale"
+          onClick={() => push("/work")}
         >
           SEE THEM ALL
         </Button>

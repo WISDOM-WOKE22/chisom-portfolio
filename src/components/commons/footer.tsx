@@ -3,29 +3,30 @@ import { ArrowUpRight } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-row items-center justify-center mb-10">
+    <div className="flex flex-row items-center justify-center mb-10 px-4">
       <div className="flex items-center justify-center w-full max-w-[1600px] border-t-1 pt-10 flex-col gap-4">
         <div className="flex justify-between items-center flex-row w-full">
-          <div className="flex flex-col text-md">
+          <div className="flex flex-col text-md" data-cursor="scale">
             <Link
               href="https://www.linkedin.com/in/chisom-kanu-834b42251"
+              className="hover:underline"
               target="_blank"
             >
               <h1>LINKEDIN</h1>
             </Link>
-            <Link href="https://github.com/chisommmy" target="_blank">
+            <Link href="https://github.com/chisommmy" className="hover:underline" target="_blank">
               <h1>GITHUB</h1>
             </Link>
-            <Link href="https://x.com/chisom_kanu01?s=21" target="_blank">
+            <Link href="https://x.com/chisom_kanu01?s=21" className="hover:underline" target="_blank">
               <h1>X (twitter)</h1>
             </Link>
-            <Link href="https://dev.to/chisom_kanu01" target="_blank">
+            <Link href="https://dev.to/chisom_kanu01" className="hover:underline" target="_blank">
               <h1>DEV-TO</h1>
             </Link>
           </div>
 
-          <div className="w-full max-w-[250px]">
-            <p>LET&apos;S CONNECT AND CONQUER YOUR WORLD TOGETHER</p>
+          <div className="w-full max-w-[250px] text-right">
+            <p>LET&apos;S CONNECT</p>
           </div>
         </div>
         <div className="flex flex-row items-center justify-center">

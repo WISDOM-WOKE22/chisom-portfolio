@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Resume = () => {
   return (
-    <div className="flex flex-row items-center justify-center">
+    <div className="flex flex-row items-center justify-center mt-10 lg:mt-0">
       <div className="">
         <Link
           target="_blank"

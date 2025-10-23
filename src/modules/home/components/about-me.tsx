@@ -6,7 +6,7 @@ export const AboutMe = () => {
       <div className="w-full max-w-[700px]">
         <div className="lg:text-[6rem] text-[3rem]">
           <h1>Hello there</h1>
-          <h1>I&apos;m Chisom Kanu</h1>
+          <h2>I&apos;m Chisom Kanu</h2>
         </div>
         <p className="text-uppercase mt-5 text-gray-500" data-cursor="scale">
           I&apos;M A TECHNICAL WRITER AND CONTENT MARKETING WRITER WITH A STRONG
@@ -18,7 +18,7 @@ export const AboutMe = () => {
         </p>
 
         <div className="mt-10">
-          <h1 className="italic text-gray-50">-SKILLS-</h1>
+          <h3 className="italic text-gray-50">-SKILLS-</h3>
 
           <div className="mt-5" data-cursor="scale">
             <p>HTML</p>
