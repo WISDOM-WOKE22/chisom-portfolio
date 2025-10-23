@@ -36,11 +36,11 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
         >
-          <CustomCursor/>
+          <CustomCursor />
           {children}
         </ThemeProvider>
       </body>

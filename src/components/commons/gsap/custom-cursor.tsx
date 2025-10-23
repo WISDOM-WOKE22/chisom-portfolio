@@ -13,8 +13,14 @@ export default function CustomCursor() {
 
     gsap.set(cursor, { xPercent: -50, yPercent: -50 });
 
-    const xTo = gsap.quickTo(cursor, "x", { duration: 0.25, ease: "power3.out" });
-    const yTo = gsap.quickTo(cursor, "y", { duration: 0.25, ease: "power3.out" });
+    const xTo = gsap.quickTo(cursor, "x", {
+      duration: 0.25,
+      ease: "power3.out",
+    });
+    const yTo = gsap.quickTo(cursor, "y", {
+      duration: 0.25,
+      ease: "power3.out",
+    });
 
     const show = () => gsap.to(cursor, { autoAlpha: 1, duration: 0.2 });
     const hide = () => gsap.to(cursor, { autoAlpha: 0, duration: 0.2 });
@@ -34,10 +40,15 @@ export default function CustomCursor() {
 
       if (type === "text") {
         const span = document.createElement("span");
-        span.className = "text-[10px] leading-none text-white font-semibold whitespace-nowrap";
+        span.className =
+          "text-[10px] leading-none text-white font-semibold whitespace-nowrap";
         span.textContent = text || "View";
         cursor.appendChild(span);
-        gsap.to(cursor, { scale: 2.5, backgroundColor: "#111", duration: 0.25 });
+        gsap.to(cursor, {
+          scale: 2.5,
+          backgroundColor: "#111",
+          duration: 0.25,
+        });
       } else if (type === "icon") {
         const span = document.createElement("span");
         span.className = "text-white";
@@ -50,10 +61,19 @@ export default function CustomCursor() {
         image.alt = "cursor";
         image.className = "w-12 h-12 object-cover rounded-full";
         cursor.appendChild(image);
-        gsap.to(cursor, { scale: 1.5, backgroundColor: "transparent", duration: 0.25 });
+        gsap.to(cursor, {
+          scale: 1.5,
+          backgroundColor: "transparent",
+          duration: 0.25,
+        });
       } else if (type === "scale") {
         // ✅ NEW: dramatically enlarge cursor 4×
-        gsap.to(cursor, { scale: 4, backgroundColor: "#fff", duration: 0.3, ease: "power3.out" });
+        gsap.to(cursor, {
+          scale: 4,
+          backgroundColor: "#fff",
+          duration: 0.3,
+          ease: "power3.out",
+        });
       } else {
         gsap.to(cursor, { scale: 1, backgroundColor: "#fff", duration: 0.25 });
       }
@@ -64,7 +84,9 @@ export default function CustomCursor() {
       gsap.to(cursor, { scale: 1, backgroundColor: "#fff", duration: 0.25 });
     };
 
-    const elements = Array.from(document.querySelectorAll<HTMLElement>("[data-cursor]"));
+    const elements = Array.from(
+      document.querySelectorAll<HTMLElement>("[data-cursor]"),
+    );
     elements.forEach((el) => {
       el.addEventListener("mouseenter", () => handleEnter(el));
       el.addEventListener("mouseleave", handleLeave);

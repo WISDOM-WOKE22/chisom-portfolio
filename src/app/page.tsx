@@ -1,7 +1,5 @@
-import { HomeLayout } from "@/modules/home/layouts"
+import { HomeLayout } from "@/modules/home/layouts";
 
 export default function Home() {
-  return (
-    <HomeLayout/>
-  );
+  return <HomeLayout />;
 }
