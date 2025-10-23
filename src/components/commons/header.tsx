@@ -24,7 +24,7 @@ export const Header = () => {
             Work
           </p>
           <p
-            className={`cursor-pointer transition-colors ${pathname === "/#contact" || (pathname === "/" && window.location.hash === "#contact") ? "font-bold text-primary" : ""}`}
+            className={`cursor-pointer transition-colors ${pathname === "/#contact" || (pathname === "/" && typeof window !== "undefined" && window.location.hash === "#contact") ? "font-bold text-primary" : ""}`}
             onClick={() => push("/#contact")}
           >
             Contact

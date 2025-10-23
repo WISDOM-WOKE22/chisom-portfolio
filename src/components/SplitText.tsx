@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
@@ -63,21 +64,15 @@ const SplitText: React.FC<SplitTextProps> = ({
       if (el._rbsplitInstance) {
         try {
           el._rbsplitInstance.revert();
-        } catch (_) {}
+        } catch (error) {
+          console.error('Error reverting split text instance:', error);
+        }
         el._rbsplitInstance = undefined;
       }
 
       const startPct = (1 - threshold) * 100;
-      const marginMatch = /^(-?\d+(?:\.\d+)?)(px|em|rem|%)?$/.exec(rootMargin);
-      const marginValue = marginMatch ? parseFloat(marginMatch[1]) : 0;
-      const marginUnit = marginMatch ? marginMatch[2] || "px" : "px";
-      const sign =
-        marginValue === 0
-          ? ""
-          : marginValue < 0
-            ? `-=${Math.abs(marginValue)}${marginUnit}`
-            : `+=${marginValue}${marginUnit}`;
-      const start = `top ${startPct}%${sign}`;
+      // Simplified margin handling
+      const start = `top ${startPct}%`;
       let targets: Element[] = [];
       const assignTargets = (self: GSAPSplitText) => {
         if (

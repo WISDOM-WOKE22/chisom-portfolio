@@ -6,10 +6,10 @@ export const AboutMe = () => {
       <div className="w-full max-w-[700px]">
         <div className="lg:text-[6rem] text-[3rem]">
           <h1>Hello there</h1>
-          <h1>I'm Chisom Kanu</h1>
+          <h1>I&apos;m Chisom Kanu</h1>
         </div>
         <p className="text-uppercase mt-5 text-gray-500" data-cursor="scale">
-          I’M A TECHNICAL WRITER AND CONTENT MARKETING WRITER WITH A STRONG
+          I&apos;M A TECHNICAL WRITER AND CONTENT MARKETING WRITER WITH A STRONG
           FOCUS ON CREATING CLEAR, ENGAGING, AND USER-CENTERED CONTENT FOR
           DEVELOPERS AND TECH AUDIENCES. I WRITE API DOCUMENTATION, DEVELOPER
           TUTORIALS, AND CONTENT MARKETING PIECES THAT NOT ONLY EXPLAIN HOW

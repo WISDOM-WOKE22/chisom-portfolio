@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import CustomCursor from "@/components/commons/gsap/custom-cursor";
+import CursorWrapper from "@/components/commons/CursorWrapper";
+import ClientOnly from "@/components/ClientOnly";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +41,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CustomCursor />
+          <ClientOnly>
+            <CursorWrapper />
+          </ClientOnly>
           {children}
         </ThemeProvider>
       </body>

@@ -25,7 +25,7 @@ export const Footer = () => {
           </div>
 
           <div className="w-full max-w-[250px]">
-            <p>LET'S CONNECT AND CONQUER YOUR WORLD TOGETHER</p>
+            <p>LET&apos;S CONNECT AND CONQUER YOUR WORLD TOGETHER</p>
           </div>
         </div>
         <div className="flex flex-row items-center justify-center">
