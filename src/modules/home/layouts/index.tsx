@@ -4,27 +4,30 @@ import { SelectedWorks } from "../components/selected-works";
 import { AboutMe } from "../components/about-me";
 import { Contact } from "../components/contact";
 import { Resume } from "../components/resume";
+import WorkLife from "../components/work-life";
 
 export const HomeLayout = () => {
   return (
     <>
       <Header />
-      <main>
-        <section className="pt-50" aria-label="About Chisom Kanu">
-          <AboutMe />
-        </section>
-        <section aria-label="Resume and Skills">
-          <Resume />
-        </section>
-        <section className="mt-50" aria-label="Selected Works and Portfolio">
-          <SelectedWorks />
-        </section>
-        <section className="my-20" id="contact" aria-label="Contact Information">
-          <Contact />
-        </section>
-        <section aria-label="Hero Section">
-          <Hero />
-        </section>
+      <main className="flex flex-col justify-center items-center">
+        <div className="w-full max-w-[1900px]">
+          <section className="pt-50" aria-label="About Chisom Kanu">
+            <AboutMe />
+          </section>
+          <section aria-label="Resume and Skills">
+            <Resume />
+          </section>
+          <section className="mt-50" aria-label="Selected Works and Portfolio">
+            <SelectedWorks />
+          </section>
+          <section className="my-20" id="contact" aria-label="Contact Information">
+            <WorkLife />
+          </section>
+          <section aria-label="Hero Section">
+            <Hero />
+          </section>
+        </div>
       </main>
       <Footer />
     </>

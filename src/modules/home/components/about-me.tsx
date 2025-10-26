@@ -21,10 +21,11 @@ export const AboutMe = () => {
           <h3 className="italic text-gray-50">-SKILLS-</h3>
 
           <div className="mt-5" data-cursor="scale">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JAVASCRIPT</p>
+            <p>FRONTEND DEVELOPMENT</p>
             <p>TECHNICAL WRITER</p>
+            <p>CONTENT WRITER AND MARKETER</p>
+            <p>SEO WRITING</p>
+            <p>API DOCUMENTATION</p>
           </div>
         </div>
       </div>
