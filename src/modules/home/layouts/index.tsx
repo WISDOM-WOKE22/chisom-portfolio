@@ -2,7 +2,6 @@ import { Header, Footer } from "@/components/commons";
 import { Hero } from "../components/hero";
 import { SelectedWorks } from "../components/selected-works";
 import { AboutMe } from "../components/about-me";
-import { Contact } from "../components/contact";
 import { Resume } from "../components/resume";
 import WorkLife from "../components/work-life";
 
@@ -21,7 +20,11 @@ export const HomeLayout = () => {
           <section className="mt-50" aria-label="Selected Works and Portfolio">
             <SelectedWorks />
           </section>
-          <section className="my-20" id="contact" aria-label="Contact Information">
+          <section
+            className="my-20"
+            id="contact"
+            aria-label="Contact Information"
+          >
             <WorkLife />
           </section>
           <section aria-label="Hero Section">

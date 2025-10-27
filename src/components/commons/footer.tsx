@@ -14,13 +14,25 @@ export const Footer = () => {
             >
               <h1>LINKEDIN</h1>
             </Link>
-            <Link href="https://github.com/chisommmy" className="hover:underline" target="_blank">
+            <Link
+              href="https://github.com/chisommmy"
+              className="hover:underline"
+              target="_blank"
+            >
               <h1>GITHUB</h1>
             </Link>
-            <Link href="https://x.com/chisom_kanu01?s=21" className="hover:underline" target="_blank">
+            <Link
+              href="https://x.com/chisom_kanu01?s=21"
+              className="hover:underline"
+              target="_blank"
+            >
               <h1>X (twitter)</h1>
             </Link>
-            <Link href="https://dev.to/chisom_kanu01" className="hover:underline" target="_blank">
+            <Link
+              href="https://dev.to/chisom_kanu01"
+              className="hover:underline"
+              target="_blank"
+            >
               <h1>DEV-TO</h1>
             </Link>
           </div>

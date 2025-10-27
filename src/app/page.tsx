@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Welcome to Chisom Kanu's portfolio. Technical writer and content marketing specialist creating clear, engaging, and user-centered content for developers and tech audiences.",
+  description:
+    "Welcome to Chisom Kanu's portfolio. Technical writer and content marketing specialist creating clear, engaging, and user-centered content for developers and tech audiences.",
   keywords: [
     "Chisom Kanu",
     "technical writer portfolio",
@@ -11,11 +12,12 @@ export const metadata: Metadata = {
     "API documentation writer",
     "developer content creator",
     "technical writing services",
-    "content strategy consultant"
+    "content strategy consultant",
   ],
   openGraph: {
     title: "Chisom Kanu - Technical Writer & Content Marketing Specialist",
-    description: "Welcome to Chisom Kanu's portfolio. Technical writer and content marketing specialist creating clear, engaging, and user-centered content for developers and tech audiences.",
+    description:
+      "Welcome to Chisom Kanu's portfolio. Technical writer and content marketing specialist creating clear, engaging, and user-centered content for developers and tech audiences.",
     url: "https://chisomkanu.com",
     images: [
       {
@@ -28,7 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Chisom Kanu - Technical Writer & Content Marketing Specialist",
-    description: "Welcome to Chisom Kanu's portfolio. Technical writer and content marketing specialist creating clear, engaging, and user-centered content for developers and tech audiences.",
+    description:
+      "Welcome to Chisom Kanu's portfolio. Technical writer and content marketing specialist creating clear, engaging, and user-centered content for developers and tech audiences.",
     images: ["/og-home.jpg"],
   },
 };

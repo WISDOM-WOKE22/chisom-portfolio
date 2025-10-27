@@ -12,7 +12,7 @@ export const WorkLayout = () => {
           <div className="my-5 xl:my-20">
             <Works />
           </div>
-        </div>   
+        </div>
       </div>
       <Footer />
     </>

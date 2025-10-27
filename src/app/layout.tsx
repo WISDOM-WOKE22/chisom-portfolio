@@ -23,9 +23,10 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: {
     default: "Chisom Kanu - Technical Writer & Content Marketing Specialist",
-    template: "%s | Chisom Kanu"
+    template: "%s | Chisom Kanu",
   },
-  description: "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
+  description:
+    "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
   keywords: [
     "technical writer",
     "content marketing",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     "developer content",
     "tech writing",
     "content strategy",
-    "documentation"
+    "documentation",
   ],
   authors: [{ name: "Chisom Kanu", url: "https://chisomkanu.com" }],
   creator: "Chisom Kanu",
@@ -56,7 +57,8 @@ export const metadata: Metadata = {
     url: "https://chisomkanu.com",
     siteName: "Chisom Kanu Portfolio",
     title: "Chisom Kanu - Technical Writer & Content Marketing Specialist",
-    description: "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
+    description:
+      "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
     images: [
       {
         url: "/og-image.jpg",
@@ -69,7 +71,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Chisom Kanu - Technical Writer & Content Marketing Specialist",
-    description: "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
+    description:
+      "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
     images: ["/og-image.jpg"],
     creator: "@chisom_kanu01",
   },
@@ -88,9 +91,9 @@ export const metadata: Metadata = {
     google: "your-google-verification-code", // Replace with actual verification code
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -102,19 +105,20 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Chisom Kanu",
-    "jobTitle": "Technical Writer & Content Marketing Specialist",
-    "description": "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
-    "url": "https://chisomkanu.com",
-    "image": "https://chisomkanu.com/og-image.jpg",
-    "sameAs": [
+    name: "Chisom Kanu",
+    jobTitle: "Technical Writer & Content Marketing Specialist",
+    description:
+      "Technical writer and content marketing specialist with expertise in API documentation, developer tutorials, and SEO-optimized content for developers and tech audiences.",
+    url: "https://chisomkanu.com",
+    image: "https://chisomkanu.com/og-image.jpg",
+    sameAs: [
       "https://www.linkedin.com/in/chisom-kanu-834b42251",
       "https://github.com/chisommmy",
       "https://x.com/chisom_kanu01",
-      "https://dev.to/chisom_kanu01"
+      "https://dev.to/chisom_kanu01",
     ],
-    "email": "Chisomkanu2001@gmail.com",
-    "knowsAbout": [
+    email: "Chisomkanu2001@gmail.com",
+    knowsAbout: [
       "Technical Writing",
       "Content Marketing",
       "API Documentation",
@@ -122,13 +126,14 @@ export default function RootLayout({
       "SEO Writing",
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
     ],
-    "hasOccupation": {
+    hasOccupation: {
       "@type": "Occupation",
-      "name": "Technical Writer",
-      "description": "Creating clear, engaging, and user-centered content for developers and tech audiences"
-    }
+      name: "Technical Writer",
+      description:
+        "Creating clear, engaging, and user-centered content for developers and tech audiences",
+    },
   };
 
   return (

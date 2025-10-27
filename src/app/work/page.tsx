@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Work",
-  description: "Explore Chisom Kanu's portfolio of technical writing and content marketing work. Featured articles on CSS frameworks, GitHub guides, MySQL optimization, and developer tutorials.",
+  description:
+    "Explore Chisom Kanu's portfolio of technical writing and content marketing work. Featured articles on CSS frameworks, GitHub guides, MySQL optimization, and developer tutorials.",
   keywords: [
     "Chisom Kanu work",
     "technical writing portfolio",
@@ -16,11 +17,12 @@ export const metadata: Metadata = {
     "CSS frameworks guide",
     "GitHub tutorials",
     "MySQL optimization",
-    "programming content"
+    "programming content",
   ],
   openGraph: {
     title: "Work - Chisom Kanu's Technical Writing Portfolio",
-    description: "Explore Chisom Kanu's portfolio of technical writing and content marketing work. Featured articles on CSS frameworks, GitHub guides, MySQL optimization, and developer tutorials.",
+    description:
+      "Explore Chisom Kanu's portfolio of technical writing and content marketing work. Featured articles on CSS frameworks, GitHub guides, MySQL optimization, and developer tutorials.",
     url: "https://chisomkanu.com/work",
     images: [
       {
@@ -33,7 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Work - Chisom Kanu's Technical Writing Portfolio",
-    description: "Explore Chisom Kanu's portfolio of technical writing and content marketing work. Featured articles on CSS frameworks, GitHub guides, MySQL optimization, and developer tutorials.",
+    description:
+      "Explore Chisom Kanu's portfolio of technical writing and content marketing work. Featured articles on CSS frameworks, GitHub guides, MySQL optimization, and developer tutorials.",
     images: ["/og-work.jpg"],
   },
 };

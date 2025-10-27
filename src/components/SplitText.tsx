@@ -65,7 +65,7 @@ const SplitText: React.FC<SplitTextProps> = ({
         try {
           el._rbsplitInstance.revert();
         } catch (error) {
-          console.error('Error reverting split text instance:', error);
+          console.error("Error reverting split text instance:", error);
         }
         el._rbsplitInstance = undefined;
       }

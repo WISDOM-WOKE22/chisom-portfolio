@@ -33,7 +33,10 @@ export const WorkItem = ({
 }) => {
   return (
     <Link href={link} target="_blank" data-cursor="scale">
-      <div data-cursor="scale" className="w-full md:w-auto cursor-pointer group">
+      <div
+        data-cursor="scale"
+        className="w-full md:w-auto cursor-pointer group"
+      >
         <div className={`relative w-full h-50 xl:h-100 border overflow-hidden`}>
           <Image
             src={src}

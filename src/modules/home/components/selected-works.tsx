@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -56,7 +56,7 @@ const WorkItem = ({
 };
 
 export const SelectedWorks = () => {
-  const {push} = useRouter();
+  const { push } = useRouter();
   return (
     <div className="px-3 lg:px-6 xl:px-14 mt-10 md:mt-20" data-magnetic>
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
