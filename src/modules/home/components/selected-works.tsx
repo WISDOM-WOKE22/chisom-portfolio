@@ -85,7 +85,7 @@ export const SelectedWorks = () => {
           link="https://pieces.app/blog/top-5-best-css-frameworks-for-responsive-web-design-in-2024"
         />
       </div>
-      <div className="mt-20 md:mt-40 lg:mt-60 flex flex-col md:flex-row-reverse gap-6 md:gap-10 lg:gap-15">
+      <div className="mt-10 md:mt-40 lg:mt-60 flex flex-col md:flex-row-reverse gap-6 md:gap-10 lg:gap-15">
         <WorkItem
           src="https://blog.openreplay.com/images/maximizing-user-experience--the-importance-of-pre-caching/images/hero.png"
           alt="image1"
@@ -103,7 +103,7 @@ export const SelectedWorks = () => {
           link="https://www.red-gate.com/simple-talk/databases/mysql/mysql-shell-basic-configuration-management-part-4-optimizing-mysql-performance/"
         />
       </div>
-      <div className="mt-20 md:mt-40 lg:mt-60 flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-15">
+      <div className="mt-10 md:mt-40 lg:mt-60 flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-15">
         <WorkItem
           src="https://framerusercontent.com/images/oyf1FaA8kyZa0Y22FvN9UPQyEk.png?scale-down-to=2048&width=3833&height=2156"
           alt="image1"
@@ -124,7 +124,7 @@ export const SelectedWorks = () => {
 
       <div className="mt-20 md:mt-40 lg:mt-60 flex flex-row justify-center items-center">
         <Button
-          className="rounded-3xl text-sm md:text-md px-6 py-2"
+          className="rounded-3xl text-sm md:text-md px-6 py-2 cursor-pointer"
           data-cursor="scale"
           onClick={() => push("/work")}
         >

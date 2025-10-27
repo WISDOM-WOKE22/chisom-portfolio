@@ -22,7 +22,6 @@ export const HomeLayout = () => {
           </section>
           <section
             className="my-20"
-            id="contact"
             aria-label="Contact Information"
           >
             <WorkLife />
@@ -32,7 +31,9 @@ export const HomeLayout = () => {
           </section>
         </div>
       </main>
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </>
   );
 };
